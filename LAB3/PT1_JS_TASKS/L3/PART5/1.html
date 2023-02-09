@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.5.1</title>
+    <!-- add mocha css, to show results -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <!-- add mocha framework code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      mocha.setup("bdd"); // minimal setup
+    </script>
+    <script>
+      function pow(x, n) {
+        if (n < 0) return NaN;
+        if (Math.round(n) != n) return NaN;
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+    </script>
+    <script src="test.js"></script>
+    <!-- the element with id="mocha" will contain test results -->
+    <div id="mocha"></div>
+    <!-- run tests! -->
+    <script>
+      mocha.run();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.8.1</title>
+    <script>
+      function sumiSalaries(salaries) {
+        let sumi = 0;
+        for (let salary of Object.values(salaries)) {
+          sumi += salary;
+        }
+        return sumi; 
+      }
+      let salaries = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+      };
+      alert(sumiSalaries(salaries)); // 650
+    </script>
+  </head>
+  <body></body>
+</html>

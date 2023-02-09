@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.5.13</title>
+    <script>
+      function groupById(array) {
+        return array.reduce((obj, value) => {
+          obj[value.id] = value;
+          return obj;
+        }, {});
+      }
+      let users = [
+        { id: "john", name: "John Smith", age: 20 },
+        { id: "ann", name: "Ann Smith", age: 24 },
+        { id: "pete", name: "Pete Peterson", age: 31 },
+      ];
+
+      let usersById = groupById(users);
+    </script>
+  </head>
+  <body></body>
+</html>
