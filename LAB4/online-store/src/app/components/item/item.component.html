@@ -1,0 +1,39 @@
+<div>
+  <img [src]="item.image" [alt]="item.title" />
+  <h2>{{ item.title }}</h2>
+  <p>
+    Price:
+    <span style="font-weight: bold">{{ item.price }}&#8376;</span>
+  </p>
+  <div class="buttons">
+    <button (click)="openLink(item.url)">Buy</button>
+    <button
+      [ngClass]="{
+        hide: !details,
+        show: details
+      }"
+      (click)="details = !details"
+    >
+      {{ details ? "Hide" : "Show" }} details
+    </button>
+    <button
+      class="share"
+      (click)="
+        openLink(
+          'https://t.me/share/url?url=' + item.url + '&text=' + item.title
+        )
+      "
+    >
+      Share on Telegram
+    </button>
+  </div>
+  <div *ngIf="details">
+    <p>{{ item.description }}</p>
+    <p>
+      Rate:
+      <span [ngStyle]="{ fontWeight: 'bold' }">{{
+        item.rating.rate | number : "1.2-4"
+      }}</span>
+    </p>
+  </div>
+</div>

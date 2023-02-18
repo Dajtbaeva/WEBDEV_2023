@@ -1,0 +1,14 @@
+<script src="src/js/angular-socialshare.js"></script>
+<div class="main">
+  <h1>{{ title }}</h1>
+  <div class="input">
+    <input type="text" placeholder="Search" [(ngModel)]="term" />
+  </div>
+  <p *ngIf="loading">Loading...</p>
+  <div class="items" *ngIf="items">
+    <app-item
+      *ngFor="let item of items | searchItems : term; let i = index"
+      [item]="item"
+    ></app-item>
+  </div>
+</div>
