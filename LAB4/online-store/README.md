@@ -1,5 +1,11 @@
 # OnlineStore
 
+The items are recorded in a json file (items.json). With the help of the json server, a fake api was made 
+from this file, data was obtained from this api.
+
+Instead of the product gallery, added a button on which you can see more information about the product and an 
+input for searching products.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
