@@ -1,0 +1,9 @@
+.product_list {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: white;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

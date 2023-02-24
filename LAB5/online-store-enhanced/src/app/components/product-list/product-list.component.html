@@ -1,0 +1,8 @@
+<div class="product_list">
+  <div class="items" *ngIf="items">
+    <app-item
+      *ngFor="let item of items | searchItems : term"
+      [item]="item"
+    ></app-item>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="main">
+  <h4>Choose a category - type of material</h4>
+  <div class="options">
+    <ul>
+      <li *ngFor="let category of categories">
+        <label>
+          <input
+            type="radio"
+            name="category"
+            [value]="category"
+            (change)="onSelect($event)"
+          />
+          {{ category }}
+        </label>
+      </li>
+    </ul>
+    <app-product-list
+      [term]="term"
+      [items]="filteredProducts"
+    ></app-product-list>
+  </div>
+</div>
