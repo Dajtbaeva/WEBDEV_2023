@@ -3,6 +3,8 @@
     <app-item
       *ngFor="let item of items | searchItems : term"
       [item]="item"
+      (remove)="deleteItem($event, item.title)"
     ></app-item>
+    <!-- <p *ngIf="items.length == 0">There's no items...</p> -->
   </div>
 </div>

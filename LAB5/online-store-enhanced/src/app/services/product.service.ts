@@ -12,4 +12,7 @@ export class ProductsService {
   getAll(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(this.URL);
   }
+  getURL(): string {
+    return this.URL;
+  }
 }

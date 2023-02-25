@@ -12,4 +12,5 @@ export interface IProduct {
   };
   url: string;
   category: string;
+  likes: number;
 }

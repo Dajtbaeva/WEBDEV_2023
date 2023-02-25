@@ -23,10 +23,12 @@ export class CategoriesPageComponent {
       this.items = data;
     });
   }
+
   onSelect(event: Event): void {
     const target = event.target as HTMLInputElement;
     this.selectedCategory = target.value;
   }
+  
   get filteredProducts(): IProduct[] {
     return this.items.filter(
       (product) => product.category === this.selectedCategory

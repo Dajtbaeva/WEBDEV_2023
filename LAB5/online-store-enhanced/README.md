@@ -1,10 +1,16 @@
-# OnlineStore
+# OnlineStoreEnhanced
 
-The items are recorded in a json file (items.json). With the help of the json server, a fake api was made 
+The items are recorded in a json file (items.json). With the help of the json server, a fake api was made
 from this file, data was obtained from this api.
 
-Instead of the product gallery, added a button on which you can see more information about the product and an 
-input for searching products.
+On product page you can see more information about the products and an input for searching needed products.
+On category page you can select the desired category (input, type radio) and get the results.
+
+With the help of HttpClient service, the data is always updated on the server and the following
+functionality was implemented:
+
+- Remove item (DELETE method)
+- Change number of likes (PUT method)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
