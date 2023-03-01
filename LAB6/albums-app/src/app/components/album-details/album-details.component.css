@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.changeTitle {
+  margin: 20px 0;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #129130;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #50805b;
+}
+.saveBtn {
+  background-color: #33b2c3;
+}
+.saveBtn:hover {
+  background-color: #5fa2ab;
+}
+a {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  background-color: #333;
+  color: #fff;
+}

@@ -1,0 +1,15 @@
+<div class="main">
+  <!-- <button routerLink="/albums" class="back">Go back</button> -->
+  <button (click)="goBack()">Go back</button>
+  <div class="info" *ngIf="album">
+    <h2>{{ album.title | titlecase }}</h2>
+    <div class="changeTitle">
+      <label for="title-input">Change title: </label>
+      <input type="text" id="title-input" [(ngModel)]="albumTitle" />
+      <button class="saveBtn" (click)="update()">Save</button>
+    </div>
+    <div>
+      <a (click)="viewPhotos()">Show photos</a>
+    </div>
+  </div>
+</div>

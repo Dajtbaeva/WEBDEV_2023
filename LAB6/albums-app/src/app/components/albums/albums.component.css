@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.title p {
+  margin: 0;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+button {
+  background-color: #4f9d55;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #3a613e;
+}
+.delete {
+  background-color: #b93939;
+}
+.delete:hover {
+  background-color: #5c2121;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
