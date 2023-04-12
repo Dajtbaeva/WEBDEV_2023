@@ -1,0 +1,38 @@
+.company-item {
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+}
+.company-item h2,
+.company-item p {
+  margin: 0.5rem 0;
+}
+p {
+  text-align: center;
+}
+.company-item h2 {
+  font-size: 1.5rem;
+  color: #414141;
+  text-align: center;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-item button {
+  font: inherit;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  cursor: pointer;
+  border: 1px solid #c01818;
+  background: #c01818;
+}
+.company-item button:hover,
+.company-item button:active {
+  border-color: #ec4848;
+  background: #ec4848;
+}

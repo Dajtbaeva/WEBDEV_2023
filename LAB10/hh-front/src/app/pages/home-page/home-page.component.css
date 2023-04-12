@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+  color: #414141;
+  padding-top: 20px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+p {
+  text-align: center;
+  font-size: 1.125rem;
+}

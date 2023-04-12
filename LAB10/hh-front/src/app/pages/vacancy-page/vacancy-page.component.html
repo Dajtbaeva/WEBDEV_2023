@@ -1,0 +1,6 @@
+<div class="vacancy-item">
+  <p class="load" *ngIf="loading">Loading...</p>
+  <h2>{{ vacancy.name | titlecase }}</h2>
+  <p>{{ vacancy.description }}</p>
+  <p>Salary: {{ vacancy.salary }}&#8376;</p>
+</div>

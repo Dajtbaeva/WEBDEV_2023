@@ -1,0 +1,7 @@
+<div class="single-vacancy" *ngIf="vacancy">
+  <li class="vacancy-item" (click)="viewDetails(vacancy)">
+    <h2>{{ vacancy.name | titlecase }}</h2>
+    <p>{{ vacancy.description }}</p>
+    <p>Salary: {{ vacancy.salary }}&#8376;</p>
+  </li>
+</div>

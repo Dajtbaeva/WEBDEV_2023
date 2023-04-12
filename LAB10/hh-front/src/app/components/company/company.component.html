@@ -1,0 +1,10 @@
+<div id="single-company">
+  <li class="company-item">
+    <h2>{{ company.name | uppercase }}</h2>
+    <p>{{ company.description }}</p>
+    <p>Address: {{ company.city }}, {{ company.address }}</p>
+    <div class="btn">
+      <button (click)="viewVacancies(company)">Show vacancies</button>
+    </div>
+  </li>
+</div>

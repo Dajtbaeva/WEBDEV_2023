@@ -1,0 +1,6 @@
+<section id="available-companies">
+  <p *ngIf="loading">Loading...</p>
+  <div class="companies" *ngIf="companies">
+    <app-company *ngFor="let comp of companies" [company]="comp"></app-company>
+  </div>
+</section>

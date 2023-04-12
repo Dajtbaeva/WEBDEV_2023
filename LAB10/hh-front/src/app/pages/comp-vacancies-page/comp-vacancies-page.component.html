@@ -1,0 +1,9 @@
+<div class="main">
+  <h2>Vacancies</h2>
+  <section id="available-vacancies">
+    <p *ngIf="loading">Loading...</p>
+    <div class="vacancies" *ngIf="vacancies">
+      <app-vacancy *ngFor="let vac of vacancies" [vacancy]="vac"></app-vacancy>
+    </div>
+  </section>
+</div>

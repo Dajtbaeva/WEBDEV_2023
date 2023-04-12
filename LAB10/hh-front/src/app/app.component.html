@@ -1,0 +1,31 @@
+<div class="body">
+  <div class="login" *ngIf="!is_logged">
+    <h1>HeadHunter</h1>
+    <h2>Please login!</h2>
+    <p>Username: <input type="text" [(ngModel)]="username" /></p>
+    <p>Password: <input type="password" [(ngModel)]="pswd" /></p>
+    <button class="btn_in" (click)="login()">Login</button>
+  </div>
+</div>
+
+<div class="content" *ngIf="is_logged">
+  <div class="navigation">
+    <nav class="nav">
+      <a routerLink="/" class="logo">HeadHunter</a>
+      <ul class="menu">
+        <li class="menu-li">
+          <a routerLink="/companies" class="link">Companies</a>
+        </li>
+        <li class="menu-li">
+          <a routerLink="/top10_vacancies" class="link">Top 10 vacancies</a>
+        </li>
+        <li class="menu-li">
+          <button class="link btn_out" (click)="logout()">Logout</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</div>

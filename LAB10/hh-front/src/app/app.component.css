@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.login {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #b9b3b2;
+  border-radius: 5px;
+  width: 30%;
+}
+.login h1 {
+  text-align: center;
+  color: #c01818;
+  padding-top: 20px;
+}
+.login h2 {
+  padding: 20px;
+}
+.login p {
+  width: 50%;
+}
+.btn_in,
+.btn_out {
+  width: 50%;
+  padding: 3px 0;
+  margin-top: 15px;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #c01818;
+  background: #c01818;
+  border-radius: 5px;
+}
+.login button:hover {
+  border-color: #cf1f1f;
+  background: #a02c2c;
+}
+.btn_out {
+  align-self: center;
+  margin: 20px 0;
+}
+.nav {
+  padding: 0 50px;
+  height: 100px;
+  background-color: #c01818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.menu {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+.link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.link:hover {
+  color: #b9b3b2;
+}
+label,
+input,
+textarea {
+  display: inline;
+  margin: 0.5rem 0;
+}
+input,
+textarea {
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  padding: 0.15rem 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c01818;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
